@@ -330,7 +330,7 @@ def valid_class(classe, abilities):
 					15,  # WIS
 					3]} # CHA
 	valid = True
-	for i in range(0, 5):
+	for i in range(0, 6):
 		if (abilities[i] < lut[classe][i]):
 			valid = False
 			break
@@ -584,7 +584,7 @@ def valid_race(race, abilities):
 				Range(3, 18)]} # CHA
 	valid = True
 	reduced = False
-	for i in range(0, 5):
+	for i in range(0, 6):
 		if (new_abilities[i] < lut[race][i].minimum):
 			valid = False
 			break
