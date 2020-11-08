@@ -600,25 +600,19 @@ def valid_race(race, abilities):
 			" abilities scores would be lowered due to a maximum " +\
 			"for that race.)")
 
-def check(ability):
+print("Enter ability scores (3-18)")
+abilities = [0, 0, 0, 0, 0, 0]
+abilities[Ability.STRENGTH] = int(input("Strength: "))
+abilities[Ability.DEXTERITY] = int(input("Dexterity: "))
+abilities[Ability.CONSTITUTION] = int(input("Constitution: "))
+abilities[Ability.INTELLIGENCE] = int(input("Intelligence: "))
+abilities[Ability.WISDOM] = int(input("Wisdom: "))
+abilities[Ability.CHARISMA] = int(input("Charisma: "))
+
+for ability in abilities:
 	if ability < 3 or ability > 18:
 		print("Incorrect input. Please enter valid ability scores (3-18).")
 		exit()
-
-print("Enter ability scores (3-18)")
-abilities = [0, 0, 0, 0, 0, 0]
-abilities[0] = int(input("Strength: "))
-check(abilities[0])
-abilities[1] = int(input("Dexterity: "))
-check(abilities[1])
-abilities[2] = int(input("Constitution: "))
-check(abilities[2])
-abilities[3] = int(input("Intelligence: "))
-check(abilities[3])
-abilities[4] = int(input("Wisdom: "))
-check(abilities[4])
-abilities[5] = int(input("Charisma: "))
-check(abilities[5])
 
 print("")
 print("Here are your options according to 1st edition Advanced Dungeons & Dragons rules:")

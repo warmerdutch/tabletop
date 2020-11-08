@@ -13,13 +13,13 @@ class Character:
 
 sides = [
 # Example party, modify inline below:
-		[	Character("Aggro the Axe",	+0,	2.0/6,	2.0/6,),
-			Character("Abner",		+0,	2.0/6,	2.0/6,),
+		[	Character("Aggro the Axe",	+0,	2.0/6,	2.0/6),
+			Character("Abner",		+0,	2.0/6,	2.0/6),
 			# Aragorn is a Ranger, and he has a high Dexterity:
 			Character("Aragorn",		+3,	1.0/6,	3.0/6),
 			# Arkayn has a low Dexterity:
-			Character("Arkayn",		-1,	2.0/6,	2.0/6,),
-			Character("Arlanni",		+0,	2.0/6,	2.0/6,)],
+			Character("Arkayn",		-1,	2.0/6,	2.0/6),
+			Character("Arlanni",		+0,	2.0/6,	2.0/6)],
 # Example monsters, again modify inline below:
 			# Source: AD&D 1e Monster Manual
 		[	Character("Cloud Giant",	+0,	1.0/6,	2.0/6),
